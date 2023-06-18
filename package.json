@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/learn-co-curriculum/js-data-structures-arrays-lab#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.22.5",
     "babel-core": "^4.7.16",
     "babel-preset-env": "1.7.0",
     "chai": "4.1.2",

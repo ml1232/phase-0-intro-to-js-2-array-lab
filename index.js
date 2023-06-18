@@ -1,3 +1,42 @@
-// Write your solution here!
-This assignment does not work when I execute npm install, nor does it work with npm test...just an uknown options preset error and something related to Babel??
-I dont know how to proceed...
+const cats = ["Milo", "Otis", "Garfield"];
+
+function destructivelyAppendCat(name) { // obviously another way to do it 
+    const destructivelyAppendCat = cats.push(name)
+    return destructivelyAppendCat
+
+}
+
+function destructivelyPrependCat(name) { // i guess this is one way to do it 
+    cats.unshift(name)
+
+}
+
+function destructivelyRemoveLastCat() {
+    cats.pop()
+}
+
+function destructivelyRemoveFirstCat() {
+    cats.shift()
+}
+
+
+function appendCat(name) {
+   const appendCat = [...cats, name]
+    return appendCat
+}
+
+function prependCat(name) {
+    const prependCat = [name, ...cats]
+    return prependCat
+
+}
+
+function removeLastCat() {
+   const removeLastCat = cats.slice(0, -1)
+   return removeLastCat
+}
+
+function removeFirstCat() {
+    const removeFirstCat = cats.slice(1)
+    return removeFirstCat 
+}
